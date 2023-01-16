@@ -8,7 +8,9 @@ body {
   --neutral-150: #ebebeb;
   --neutral-900: #0f0f0f;
   --secondary-600: #4e4dd4;
+  --secondary-800: #2f2e80;
   --primary-600: #00a895;
+  --green: #41e208;
 }
 
 .bg-neutral-150 {
@@ -23,8 +25,16 @@ body {
   background-color: var(--secondary-600);
 }
 
+.bg-secondary-800 {
+  background-color: var(--secondary-800);
+}
+
 .bg-primary-600 {
   background-color: var(--primary-600);
+}
+
+.bg-green {
+  background-color: var(--green);
 }
 
 .text-neutral-150 {
@@ -90,7 +100,16 @@ body {
 }
 
 #service_section {
-  height: 100vh;
+  height: 800px;
+}
+
+.top_service {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.top_service img {
+  width: 100%;
 }
 
 /* Button */
@@ -121,6 +140,14 @@ body {
 
   #service_section {
     height: auto;
+  }
+
+  .top_service {
+    width: 100%;
+  }
+
+  .top_service img {
+    width: 30%;
   }
 
   #footer_left {
