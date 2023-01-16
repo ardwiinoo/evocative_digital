@@ -8,3 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
 AOS.init({
   once: true,
 });
+
+
+const accordions = document.querySelectorAll('.accordion-head')
+const accordionsBody = document.querySelectorAll('.accordion-body')
+
+accordions.forEach(accordion => {
+  accordion.addEventListener('click', () => {
+    accordion.classList.toggle('active')
+  })
+})
