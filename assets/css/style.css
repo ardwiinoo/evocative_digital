@@ -5,11 +5,11 @@ body {
 }
 
 :root {
-  --neutral-25: #FAFAFA;
-  --neutral-100: #F0F0F0;
+  --neutral-25: #fafafa;
+  --neutral-100: #f0f0f0;
   --neutral-150: #ebebeb;
-  --neutral-400: #8A8A8A;
-  --neutral-800: #1F1F1F;
+  --neutral-400: #8a8a8a;
+  --neutral-800: #1f1f1f;
   --neutral-900: #0f0f0f;
   --secondary-600: #4e4dd4;
   --secondary-800: #2f2e80;
@@ -140,7 +140,7 @@ body {
 
 .accordion {
   max-width: 1113px;
-  height: fit-content;
+  max-height: max-content;
   margin-bottom: 40px;
   border-radius: 15px;
 }
@@ -200,11 +200,74 @@ body {
   padding: 4px 1rem;
 }
 
+/* Pricing */
+.card-pricing {
+  border-radius: 15px;
+  height: 540px;
+  width: 397px;
+  transition: 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.card-pricing h5 {
+  margin-top: 2rem;
+  color: #44465f;
+  font-size: 20px;
+}
+
+.card-pricing:hover {
+  box-shadow: 10px 17px 60px rgba(138, 138, 138, 0.14);
+}
+
+.check-pricing {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #92bf75;
+}
+
+.card-pricing ul li p {
+  color: #2b2c3e;
+  font-size: 14px;
+}
+
+/* service */
+
+.hero_service {
+  box-shadow: 32px 32px 0 0 #2bfce4;
+  border-radius: 20px;
+}
 
 /* Button */
 .btn:hover {
   background-color: var(--primary-600);
   transition: 0.3s ease-in-out;
+}
+
+.btn-pricing {
+  height: 48px;
+  width: 100%;
+  border: 1px solid #5e5cff;
+  color: #5e5cff;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-pricing:hover {
+  background-color: #5e5cff;
+  color: white;
 }
 
 /* Footer */
@@ -246,5 +309,21 @@ body {
   .footer_right_text {
     float: none;
     text-align: center;
+  }
+
+  .card-pricing {
+    width: 100%;
+  }
+
+  .accordion-head {
+    max-height: fit-content;
+  }
+
+  .accordion-head p {
+    font-size: 1rem;
+  }
+
+  .accordion-body p {
+    font-size: 1rem;
   }
 }
