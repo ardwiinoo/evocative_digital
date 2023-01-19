@@ -5,11 +5,11 @@ body {
 }
 
 :root {
-  --neutral-25: #FAFAFA;
-  --neutral-100: #F0F0F0;
+  --neutral-25: #fafafa;
+  --neutral-100: #f0f0f0;
   --neutral-150: #ebebeb;
-  --neutral-400: #8A8A8A;
-  --neutral-800: #1F1F1F;
+  --neutral-400: #8a8a8a;
+  --neutral-800: #1f1f1f;
   --neutral-900: #0f0f0f;
   --secondary-600: #4e4dd4;
   --secondary-800: #2f2e80;
@@ -215,7 +215,7 @@ body {
 
 .card-pricing h5 {
   margin-top: 2rem;
-  color: #44465F;
+  color: #44465f;
   font-size: 20px;
 }
 
@@ -230,18 +230,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #92BF75;
+  background-color: #92bf75;
 }
 
 .card-pricing ul li p {
-  color: #2B2C3E;
+  color: #2b2c3e;
   font-size: 14px;
 }
 
 /* service */
 
 .hero_service {
-  box-shadow: 32px 32px 0 0 #2BFCE4;
+  box-shadow: 32px 32px 0 0 #2bfce4;
   border-radius: 20px;
 }
 
@@ -254,8 +254,8 @@ body {
 .btn-pricing {
   height: 48px;
   width: 100%;
-  border: 1px solid #5E5CFF;
-  color: #5E5CFF;
+  border: 1px solid #5e5cff;
+  color: #5e5cff;
   font-weight: 700;
   font-size: 14px;
   border-radius: 10px;
@@ -266,7 +266,7 @@ body {
 }
 
 .btn-pricing:hover {
-  background-color: #5E5CFF;
+  background-color: #5e5cff;
   color: white;
 }
 
@@ -322,7 +322,7 @@ body {
   .accordion-head p {
     font-size: 1rem;
   }
-  
+
   .accordion-body p {
     font-size: 1rem;
   }
