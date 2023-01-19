@@ -140,7 +140,7 @@ body {
 
 .accordion {
   max-width: 1113px;
-  height: fit-content;
+  max-height: max-content;
   margin-bottom: 40px;
   border-radius: 15px;
 }
@@ -220,7 +220,7 @@ body {
 }
 
 .card-pricing:hover {
-  box-shadow: 10px 17px 60px rgba(138, 138, 138, 0.12);
+  box-shadow: 10px 17px 60px rgba(138, 138, 138, 0.14);
 }
 
 .check-pricing {
@@ -236,6 +236,13 @@ body {
 .card-pricing ul li p {
   color: #2B2C3E;
   font-size: 14px;
+}
+
+/* service */
+
+.hero_service {
+  box-shadow: 32px 32px 0 0 #2BFCE4;
+  border-radius: 20px;
 }
 
 /* Button */
@@ -306,5 +313,17 @@ body {
 
   .card-pricing {
     width: 100%;
+  }
+
+  .accordion-head {
+    max-height: fit-content;
+  }
+
+  .accordion-head p {
+    font-size: 1rem;
+  }
+  
+  .accordion-body p {
+    font-size: 1rem;
   }
 }
