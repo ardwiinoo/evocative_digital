@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dropdown-container.active ~ .dropdown-inner {
+    @apply flex;
+  }
+}
+
+.dropdown-inner {
+  animation: reveal-dropdown 250ms ease-in;
+}
+
+@keyframes reveal-dropdown {
+  from {
+    top: 120px;
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
