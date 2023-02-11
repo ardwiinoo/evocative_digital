@@ -25,9 +25,6 @@ dropdownContainers.forEach((dropdown, idx) => {
     dropdown.classList.add('active')
   })
   
-  dropdown.addEventListener('blur', () => {
-    hideAllDropdown()
-  })
 })
 
 function hideAllDropdown() {
