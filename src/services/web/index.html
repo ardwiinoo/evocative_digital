@@ -42,6 +42,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -110,15 +112,16 @@
             <a
               href="#"
               class="text-sm py-[19.5px] px-[30.5px] rounded bg-secondary-600 text-white"
-              >Get in Touch</a
             >
+              Get in Touch
+            </a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Hero Start -->
-    <div class="w-screen min-h-screen md:h-[88vh] bg-neutral-150 flex">
+    <div class="min-h-screen md:h-[88vh] bg-neutral-150 flex">
       <div
         class="container mx-auto flex gap-10 flex-col-reverse md:flex-row justify-between items-center px-4 md:px-0"
       >
@@ -141,217 +144,267 @@
             Order Sekarang
           </a>
         </div>
-        <img
-          src="../../assets/img/hero_service.png"
-          alt="Hero"
-          class="w-80 md:w-[580px] object-cover z-[5] shadow-[24px_24px_0px_0px_rgba(43,252,228,1)] md:shadow-[32px_32px_0px_0px_rgba(43,252,228,1)] rounded-[15px] mr-12"
-        />
+        <div class="w-80 md:w-[580px] relative mr-20 my-12 md:my-0">
+          <img
+            src="../../assets/img/hero_service.png"
+            alt="Hero"
+            class="object-cover z-[5] rounded-[15px] mr-12 relative z-5"
+          />
+          <div class="absolute top-8 left-8 -z-5 w-full h-full bg-primary-400 rounded-[15px]">
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Pricing Start -->
-    <div class="w-screen">
-      <div class="container mx-auto px-6 md:px-0">
-        <h4 class="text-center mt-28 text-3xl font-semibold text-neutral-800">
-          Detail Harga Jasa Web Development
-        </h4>
-        <div class="mx-auto flex flex-col md:flex-row justify-between mt-16 gap-y-10">
-          <!-- pricing 1 -->
-          <div class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60">
-            <img
-              src="../../assets/img/warehouse 1.webp"
-              class="object-cover w-20 mx-auto mt-4"
-            />
-            <p class="mt-4 text-center text-neutral-500">Rp 180.127,33</p>
-            <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
-              Landing Page
-            </p>
-            <ul class="mt-6">
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Hosting dan Custom Gratis</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>1x revisi</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Link to media sosial</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Garansi dan gratis konsultasi</p>
-              </li>
-            </ul>
-            <a class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer">
-              Order Sekarang
-            </a>
-          </div>
-          
-          <!-- pricing 2 -->
-          <div class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60">
-            <img
-              src="../../assets/img/school 1.webp"
-              class="object-cover w-20 mx-auto mt-4"
-            />
-            <p class="mt-4 text-center text-neutral-500">Rp 546.647,41</p>
-            <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
-              Website Sekolah
-            </p>
-            <ul class="mt-6">
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Hosting dan Custom Gratis</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>3x revisi</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Link to media sosial</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Garansi dan gratis konsultasi</p>
-              </li>
-            </ul>
-            <a class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer">
-              Order Sekarang
-            </a>
-          </div>
+    <div class="container mx-auto px-6 md:px-0">
+      <h4 class="text-center mt-28 text-3xl font-semibold text-neutral-800">
+        Detail Harga Jasa Web Development
+      </h4>
+      <div class="flex flex-col md:flex-row justify-between mt-16 gap-y-10">
+        <!-- pricing 1 -->
+        <div
+          class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60"
+        >
+          <img
+            src="../../assets/img/warehouse 1.webp"
+            class="object-cover w-20 mx-auto mt-4"
+          />
+          <p class="mt-4 text-center text-neutral-500">Rp 180.127,33</p>
+          <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
+            Landing Page
+          </p>
+          <ul class="mt-6">
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Hosting dan Custom Gratis</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>1x revisi</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Link to media sosial</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Garansi dan gratis konsultasi</p>
+            </li>
+          </ul>
+          <a
+            class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer"
+          >
+            Order Sekarang
+          </a>
+        </div>
 
-          <!-- pricing 3 -->
-          <div class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60">
-            <img
-              src="../../assets/img/business 1.webp"
-              class="object-cover w-20 mx-auto mt-4"
-            />
-            <p class="mt-4 text-center text-neutral-500">Rp 2.449.432,77</p>
-            <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
-              Website Bisnis
-            </p>
-            <ul class="mt-6">
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Hosting dan Custom Gratis</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>3x revisi</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Link to media sosial</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Garansi dan gratis konsultasi</p>
-              </li>
-            </ul>
-            <a class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer">
-              Order Sekarang
-            </a>
-          </div>
+        <!-- pricing 2 -->
+        <div
+          class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60"
+        >
+          <img
+            src="../../assets/img/school 1.webp"
+            class="object-cover w-20 mx-auto mt-4"
+          />
+          <p class="mt-4 text-center text-neutral-500">Rp 546.647,41</p>
+          <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
+            Website Sekolah
+          </p>
+          <ul class="mt-6">
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Hosting dan Custom Gratis</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>3x revisi</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Link to media sosial</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Garansi dan gratis konsultasi</p>
+            </li>
+          </ul>
+          <a
+            class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer"
+          >
+            Order Sekarang
+          </a>
+        </div>
 
-          <!-- pricing 4 -->
-          <div class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60">
-            <img
-              src="../../assets/img/charity 1.webp"
-              class="object-cover w-20 mx-auto mt-4"
-            />
-            <p class="mt-4 text-center text-neutral-500">Rp 0,00</p>
-            <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
-              Website Amal
-            </p>
-            <ul class="mt-6">
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Hosting dan Custom Gratis</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>1x revisi</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Link to media sosial</p>
-              </li>
-              <li class="flex gap-2 items-center mt-1 text-neutral-500">
-                <div
-                  class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
-                >
-                  <img src="../../assets/img/check.png" />
-                </div>
-                <p>Garansi dan gratis konsultasi</p>
-              </li>
-            </ul>
-            <a class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer">
-              Order Sekarang
-            </a>
+        <!-- pricing 3 -->
+        <div
+          class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60"
+        >
+          <img
+            src="../../assets/img/business 1.webp"
+            class="object-cover w-20 mx-auto mt-4"
+          />
+          <p class="mt-4 text-center text-neutral-500">Rp 2.449.432,77</p>
+          <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
+            Website Bisnis
+          </p>
+          <ul class="mt-6">
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Hosting dan Custom Gratis</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>3x revisi</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Link to media sosial</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Garansi dan gratis konsultasi</p>
+            </li>
+          </ul>
+          <a
+            class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer"
+          >
+            Order Sekarang
+          </a>
+        </div>
+
+        <!-- pricing 4 -->
+        <div
+          class="bg-white hover:shadow hover:shadow-lg w-full md:w-[300px] max-w-full h-[448px] rounded-md flex flex-col p-8 bg-neutral-50/60"
+        >
+          <img
+            src="../../assets/img/charity 1.webp"
+            class="object-cover w-20 mx-auto mt-4"
+          />
+          <p class="mt-4 text-center text-neutral-500">Rp 0,00</p>
+          <p class="mt-2 text-center font-semibold text-2xl text-neutral-700">
+            Website Amal
+          </p>
+          <ul class="mt-6">
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Hosting dan Custom Gratis</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>1x revisi</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Link to media sosial</p>
+            </li>
+            <li class="flex gap-2 items-center mt-1 text-neutral-500">
+              <div
+                class="w-[18px] h-[18px] rounded-full bg-[#92BF75] flex items-center justify-center"
+              >
+                <img src="../../assets/img/check.png" />
+              </div>
+              <p>Garansi dan gratis konsultasi</p>
+            </li>
+          </ul>
+          <a
+            class="inline-block bg-[#41E208] mx-auto text-white py-3 px-6 mt-8 rounded mb-20 md:mb-0 cursor-pointer"
+          >
+            Order Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-6 md:px-0 mt-20 flex flex-col md:flex-row justify-between">
+      <div class="flex-1 pl-0 md:pl-8">
+        <p class="text-secondary-600 font-semibold">FAQ</p>
+        <h2 class="max-w-[400px] text-lg text-neutral-800 leading-relaxed mt-6">
+          Berikut informasi seputar website, sekaligus pertanyaan-pertanyaan pelanggan mengenai layanan kami
+        </h2>
+      </div>
+      <div class="flex-1 pr-0 md:pr-8 pt-6">
+        <div class="w-full h-fit border-b border-gray-200 pb-4">
+          <div class="flex items-center justify-between h-16 mt-4 faq-title">
+            <p class="text-neutral-700 text-lg font-semibold">Apa yang dimaksud dengan jasa pembuatan website?</p>
+            <button class="w-8 h-8 rounded-full bg-gray-100 shadow-gray-100/80 flex items-center justify-center">
+              <i class='bx bx-chevron-up text-gray-500 text-2xl hover:rotate-180 duration-150 ease-in'></i>
+            </button>
           </div>
-           
+          <div class="w-full h-fit text-neutral-400 hidden faq-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia quo iusto omnis ut dicta officiis quos deleniti suscipit, incidunt aut in nemo provident possimus repellat facilis modi nisi numquam.
+          </div>
+        </div>
+        <div class="w-full h-fit border-b border-gray-200 pb-4">
+          <div class="flex items-center justify-between h-16 mt-4 faq-title">
+            <p class="text-neutral-700 text-lg font-semibold">Apa yang perlu disiapkan?</p>
+            <button class="w-8 h-8 rounded-full bg-gray-100 shadow-gray-100/80 flex items-center justify-center">
+              <i class='bx bx-chevron-up text-gray-500 text-2xl hover:rotate-180 duration-150 ease-in'></i>
+            </button>
+          </div>
+          <div class="w-full h-fit text-neutral-400 hidden faq-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia quo iusto omnis ut dicta officiis quos deleniti suscipit, incidunt aut in nemo provident possimus repellat facilis modi nisi numquam.
+          </div>
         </div>
       </div>
     </div>

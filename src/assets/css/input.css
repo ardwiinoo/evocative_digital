@@ -21,3 +21,11 @@
     opacity: 1;
   }
 }
+
+.faq-content > p {
+  display: none;
+}
+
+.faq-content.h-fit > p {
+  display: block;
+}

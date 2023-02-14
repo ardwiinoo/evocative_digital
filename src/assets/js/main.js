@@ -32,3 +32,18 @@ function hideAllDropdown() {
     drop.classList.remove('active')
   })
 }
+
+
+const faqTitles = document.querySelectorAll('.faq-title')
+const faqContents = document.querySelectorAll('.faq-content')
+
+
+faqTitles.forEach((title, idx) => {
+  title.addEventListener('click', () => {
+    openContent(idx)
+  })
+})
+
+function openContent(index) {
+  faqContents[index].classList.toggle('hidden')
+}
