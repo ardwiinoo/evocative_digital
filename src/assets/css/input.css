@@ -8,6 +8,10 @@
   }
 }
 
+/* * {
+  outline: 1px solid red;
+} */
+
 .dropdown-inner {
   animation: reveal-dropdown 250ms ease-in;
 }
