@@ -8,6 +8,10 @@
   }
 }
 
+/* * {
+  outline: 1px solid red;
+} */
+
 .dropdown-inner {
   animation: reveal-dropdown 250ms ease-in;
 }
@@ -20,4 +24,12 @@
   to {
     opacity: 1;
   }
+}
+
+.faq-content > p {
+  display: none;
+}
+
+.faq-content.h-fit > p {
+  display: block;
 }
