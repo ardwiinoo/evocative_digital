@@ -42,14 +42,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="fixed top-0 left-0 h-[80px] w-screen bg-white navbar z-10">
-      <div class="container mx-auto flex justify-between items-center h-full">
+    <nav class="fixed top-0 left-0 h-[80px] w-screen bg-neutral-150 navbar z-10">
+      <div class="container mx-auto flex justify-between items-center h-full px-6 md:px-0">
         <div class="flex items-center gap-5">
           <img
-            src="../../assets/img/logo-new.png"
+            src="./assets/img/logo-new.png"
             id="logo"
             draggable="false"
             oncontextmenu="return false"
@@ -68,11 +70,14 @@
             <a href="#">About</a>
           </li>
           <li class="h-full flex items-center">
+
             <a class="flex items-center dropdown-container">
               <span>Services</span>
               <i class="text-sm mt-[4px] bi bi-caret-right-fill"></i>
 
-              <div class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner">
+              <div
+                class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner"
+              >
                 <a href="#" class="block mb-8">Jasa Pembuatan Website</a>
                 <a href="#" class="block mb-8">Jasa Pembuatan Aplikasi</a>
                 <a href="#" class="block mb-8">Jasa UI/UX design</a>
@@ -89,14 +94,19 @@
               <span>Informations</span>
               <i class="text-sm mt-[4px] bi bi-caret-right-fill"></i>
 
-              <div class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner">
+              <div
+                class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner"
+              >
                 <a href="#" class="block mb-8">Pembayaran</a>
                 <a href="#" class="block">Blog</a>
               </div>
             </a>
           </li>
           <li>
-            <a href="#" class="text-sm py-[19.5px] px-[30.5px] rounded bg-secondary-600 text-white">
+            <a
+              href="#"
+              class="text-sm py-[19.5px] px-[30.5px] rounded bg-secondary-600 text-white"
+            >
               Get in Touch
             </a>
           </li>
