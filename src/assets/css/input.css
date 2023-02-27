@@ -6,6 +6,15 @@
   .dropdown-container.active ~ .dropdown-inner {
     @apply flex;
   }
+  .dropdown-container-mobile.active ~ .dropdown-inner-mobile {
+    @apply block;
+  }
+  .mobile-menu {
+    @apply -left-full;
+  }
+  .mobile-menu.active {
+    @apply left-0 left-1/2;
+  }
 }
 
 .dropdown-inner {

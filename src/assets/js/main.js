@@ -9,14 +9,6 @@ AOS.init({
   once: true,
 })
 
-// const accordions = document.querySelectorAll('.accordion-head')
-
-// accordions.forEach(accordion => {
-//   accordion.addEventListener('click', () => {
-//     accordion.classList.toggle('active')
-//   })
-// })
-
 const dropdownContainers = document.querySelectorAll('.dropdown-container')
 
 dropdownContainers.forEach((dropdown, idx) => {
@@ -35,3 +27,22 @@ function hideAllDropdown() {
     drop.classList.remove('active')
   })
 }
+
+const MobileMenuBtn = document.querySelector('.mobile-menu-btn')
+const MobileMenu = document.querySelector('.mobile-menu')
+const closeMenuBtn = document.querySelector('.close-menu-btn')
+
+MobileMenuBtn.addEventListener('click', () => {
+  MobileMenu.classList.add('active')
+})
+closeMenuBtn.addEventListener('click', () => {
+  MobileMenu.classList.remove('active')
+})
+
+const dropdownContainersMobile = document.querySelectorAll('.dropdown-container-mobile')
+
+dropdownContainersMobile.forEach((dropdown) => {
+  dropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('active')
+  })
+})

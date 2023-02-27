@@ -45,10 +45,8 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="fixed top-0 left-0 h-[80px] w-screen navbar bg-white z-50">
-      <div
-        class="container max-w-[1350px] mx-auto flex justify-between item-center h-full"
-      >
+    <nav class="fixed top-0 left-0 h-[80px] w-screen bg-neutral-150 navbar z-50">
+      <div class="container max-w-[1350px] mx-auto flex justify-between items-center h-full px-6 md:px-0">
         <div class="flex items-center gap-5">
           <img
             src="./assets/img/logo-new.png"
@@ -61,10 +59,8 @@
             <p class="font-xl">Digital Indonesia</p>
           </div>
         </div>
-
-        <ul
-          class="items-center h-full gap-10 text-xl text-neutral-900 hidden md:flex"
-        >
+        
+        <ul class="items-center h-full gap-10 text-xl text-neutral-900 hidden md:flex">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -72,43 +68,120 @@
             <a href="about.html">About</a>
           </li>
           <li class="h-full flex items-center">
-            <a href="#" class="flex items-center dropdown-container">
+            <a class="flex items-center dropdown-container">
               <span>Services</span>
               <i class="text-sm mt-[4px] bi bi-caret-right-fill"></i>
 
-              <div
-                class="absolute h-fit top-16 translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner"
-              >
+              <div class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner">
                 <a href="#" class="block mb-8">Jasa Pembuatan Website</a>
                 <a href="#" class="block mb-8">Jasa Pembuatan Aplikasi</a>
                 <a href="#" class="block mb-8">Jasa UI/UX design</a>
                 <a href="#" class="block mb-8">Jasa Pembuatan Piranti IoT</a>
                 <a href="#" class="block">IT Training</a>
               </div>
-            </a>
+            </butt>
           </li>
           <li class="h-full flex items-center">
             <a href="#" class="flex items-center dropdown-container">
               <span>Informations</span>
               <i class="text-sm mt-[4px] bi bi-caret-right-fill"></i>
 
-              <div
-                class="absolute h-fit top-16 translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner"
-              >
+              <div class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner">
                 <a href="#" class="block mb-8">Pembayaran</a>
                 <a href="#" class="block">Blog</a>
               </div>
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              class="text-sm py-[19.5px] px-[30.5px] rounded bg-secondary-600 text-white"
-            >
+            <a href="#" class="text-sm py-[19.5px] px-[30.5px] rounded bg-secondary-600 text-white">
               Get in Touch
             </a>
           </li>
         </ul>
+
+        <button class="w-8 h-8 rounded border border-gray-200 bg-white/20 flex items-center justify-center block md:hidden text-gray-800 text-xl mobile-menu-btn">
+          <i class='bx bx-menu'></i>
+        </button>
+
+        <div class="fixed top-0 h-full w-full bg-gray-300 block md:hidden p-6 -translate-x-1/2 duration-150 ease-in mobile-menu">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-5">
+              <img
+                src="./assets/img/logo-new.png"
+                id="logo"
+                draggable="false"
+                oncontextmenu="return false"
+              />
+              <div class="text-neutral-800">
+                <p class="font-extrabold font-lg">Evocative</p>
+                <p>Digital Indonesia</p>
+              </div>
+            </div>
+            <button class="w-10 h-10 rounded-full border border-gray-200 bg-white/20 flex items-center justify-center block md:hidden text-gray-800 text-2xl close-menu-btn">
+              <i class='bx bx-x'></i>
+            </button>
+          </div>
+
+          <div class="mt-10">
+            <ul>
+              <li class="mb-4">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="mb-4">
+                <a href="about.html">About</a>
+              </li>
+              <li class="mb-4">
+                <a class="relative h-full flex flex-col justify-start w-full dropdown-container-mobile">
+                  <div class="flex justify-between items-center w-full">
+                    <p>Services</p>
+                    <div class="text-gray-400">
+                      <i class='bx bx-chevron-down' ></i>
+                    </div>
+                  </div>
+                  <div class="mt-4 rounded px-6 py-3 text-left bg-gray-200 w-full border border-gray-300 hidden dropdown-inner-mobile">
+                    <ul>
+                      <li class="mb-4">
+                        <a href="#" class="text-gray-800">Jasa Pembuatan Website</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-gray-800">Jasa Pembuatan Aplikasi</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-gray-800">Jasa UI UX design</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-gray-800">Jasa Piranti iOT</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-800">IT training</a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="relative h-full flex flex-col justify-start w-full dropdown-container-mobile">
+                  <div class="flex justify-between items-center w-full">
+                    <p>Informations</p>
+                    <div class="text-gray-400">
+                      <i class='bx bx-chevron-down' ></i>
+                    </div>
+                  </div>
+                  <div class="mt-4 rounded px-6 py-3 text-left bg-gray-200 w-full border border-gray-300 hidden dropdown-inner-mobile">
+                    <ul>
+                      <li class="mb-4">
+                        <a href="#" class="text-gray-800">Pembayaran</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-800">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
