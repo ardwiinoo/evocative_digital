@@ -17,9 +17,6 @@ dropdownContainers.forEach((dropdown, idx) => {
     dropdown.classList.add('active')
   })
   
-  dropdown.addEventListener('blur', () => {
-    hideAllDropdown()
-  })
 })
 
 function hideAllDropdown() {
@@ -46,3 +43,18 @@ dropdownContainersMobile.forEach((dropdown) => {
     dropdown.classList.toggle('active')
   })
 })
+
+
+const faqTitles = document.querySelectorAll('.faq-title')
+const faqContents = document.querySelectorAll('.faq-content')
+
+
+faqTitles.forEach((title, idx) => {
+  title.addEventListener('click', () => {
+    openContent(idx)
+  })
+})
+
+function openContent(index) {
+  faqContents[index].classList.toggle('hidden')
+}
