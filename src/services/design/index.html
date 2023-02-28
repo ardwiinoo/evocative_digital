@@ -50,14 +50,15 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="fixed top-0 left-0 h-[80px] w-screen bg-neutral-150 navbar z-10">
-      <div class="container mx-auto flex justify-between items-center h-full px-6 md:px-0">
+    <nav class="fixed top-0 left-0 h-[80px] w-screen bg-white navbar z-20 p-6 md:p-0">
+      <div class="container mx-auto flex justify-between items-center h-full">
         <div class="flex items-center gap-5">
           <img
             src="../../assets/img/logo-new.png"
             id="logo"
             draggable="false"
             oncontextmenu="return false"
+            class="w-20 object-cover"
           />
           <div class="text-neutral-800">
             <p class="font-extrabold font-2xl">Evocative</p>
@@ -81,10 +82,10 @@
               <div
                 class="absolute h-fit top-[98px] translate-y-100 -translate-x-4 w-[300px] bg-gray-100 rounded-[8px] border border-neutral-300 hidden flex-col items-start p-4 dropdown-inner"
               >
-                <a href="#" class="block mb-8">Jasa Pembuatan Website</a>
-                <a href="#" class="block mb-8">Jasa Pembuatan Aplikasi</a>
-                <a href="#" class="block mb-8">Jasa UI/UX design</a>
-                <a href="#" class="block mb-8">Jasa Pembuatan Piranti IoT</a>
+                <a href="/src/services/web" class="block mb-8">Jasa Pembuatan Website</a>
+                <a href="/src/services/mobile" class="block mb-8">Jasa Pembuatan Aplikasi</a>
+                <a href="/src/services/design" class="block mb-8">Jasa UI/UX design</a>
+                <a href="/src/services/iot" class="block mb-8">Jasa Pembuatan Piranti IoT</a>
                 <a href="#" class="block">IT Training</a>
               </div>
             </butt>
@@ -123,7 +124,7 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-5">
               <img
-                src="./assets/img/logo-new.png"
+                src="../../assets/img/logo-new.png"
                 id="logo"
                 draggable="false"
                 oncontextmenu="return false"
@@ -157,16 +158,16 @@
                   <div class="mt-4 rounded px-6 py-3 text-left bg-gray-200 w-full border border-gray-300 hidden dropdown-inner-mobile">
                     <ul>
                       <li class="mb-4">
-                        <a href="#" class="text-gray-800">Jasa Pembuatan Website</a>
+                        <a href="/src/services/web/" class="text-gray-800">Jasa Pembuatan Website</a>
                       </li>
                       <li class="mb-4">
-                        <a href="#" class="text-gray-800">Jasa Pembuatan Aplikasi</a>
+                        <a href="/src/services/mobile/" class="text-gray-800">Jasa Pembuatan Aplikasi</a>
                       </li>
                       <li class="mb-4">
-                        <a href="#" class="text-gray-800">Jasa UI UX design</a>
+                        <a href="/src/services/design/" class="text-gray-800">Jasa UI UX design</a>
                       </li>
                       <li class="mb-4">
-                        <a href="#" class="text-gray-800">Jasa Piranti iOT</a>
+                        <a href="/src/services/iot/" class="text-gray-800">Jasa Piranti iOT</a>
                       </li>
                       <li>
                         <a href="#" class="text-gray-800">IT training</a>
@@ -298,6 +299,130 @@
       </div>
     </div>
 
+    <!-- section 2 -->
+    <section class="mt-32 bg-slate-100 py-24">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="w-full h-fit text-center">
+          <h2 class="text-3xl text-gray-800 font-semibold">Metode Pengembangan UI UX</h2>
+          <p class="text-gray-600 mt-4">Beberapa metode yang kami gunakan</p>
+        </div>
+        <div class="mt-12 flex justify-between flex-wrap">
+          <div class="w-full lg:w-[30%] p-6 py-8 hover:bg-white rounded hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="w-8 h-8 rounded bg-teal-200"></div>
+            <p class="mt-4 text-lg text-gray-800 font-semibold">User Research</p>
+            <p class="mt-2 text-gray-400">Melakukan studi terhadap pengguna untuk memahami kebutuhan, perilaku, dan tingkat kepuasan mereka terhadap produk.</p>
+          </div>
+          <div class="w-full lg:w-[30%] p-6 py-8 hover:bg-white rounded hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in"">
+            <div class="w-8 h-8 rounded bg-teal-200"></div>
+            <p class="mt-4 text-lg text-gray-800 font-semibold">Information Architecture</p>
+            <p class="mt-2 text-gray-400">Mengatur struktur dan tata letak informasi dalam produk agar mudah dipahami dan ditemukan pengguna</p>
+          </div>
+          <div class="w-full lg:w-[30%] p-6 py-8 hover:bg-white rounded hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in"">
+            <div class="w-8 h-8 rounded bg-teal-200"></div>
+            <p class="mt-4 text-lg text-gray-800 font-semibold">Wireframing & Prototyping</p>
+            <p class="mt-2 text-gray-400">Membuat skema dan prototipe dari produk untuk mengetahui bagaimana produk akan terlihat dan berfungsi sebelum dikembangkan secara lebih detail.</p>
+          </div>
+          <div class="w-full lg:w-[30%] p-6 py-8 hover:bg-white rounded hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in"">
+            <div class="w-8 h-8 rounded bg-teal-200"></div>
+            <p class="mt-4 text-lg text-gray-800 font-semibold">Usability Testing</p>
+            <p class="mt-2 text-gray-400">Melakukan tes terhadap prototipe produk untuk menentukan apakah produk memenuhi kebutuhan dan harapan pengguna.</p>
+          </div>
+          <div class="w-full lg:w-[30%] p-6 py-8 hover:bg-white rounded hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in"">
+            <div class="w-8 h-8 rounded bg-teal-200"></div>
+            <p class="mt-4 text-lg text-gray-800 font-semibold">Iterasi and Refining</p>
+            <p class="mt-2 text-gray-400">Melakukan perbaikan dan pengembangan berdasarkan hasil dari tahap sebelumnya.</p>
+          </div>
+          <div class="w-full lg:w-[30%] p-6 py-8 hover:bg-white rounded hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in"">
+            <div class="w-8 h-8 rounded bg-teal-200"></div>
+            <p class="mt-4 text-lg text-gray-800 font-semibold">A/B Testing</p>
+            <p class="mt-2 text-gray-400">Melakukan tes alternatif untuk membandingkan dua atau lebih varian produk dan memutuskan varian mana yang lebih baik.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="mt-32">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="max-w-[600px]">
+          <h2 class="text-2xl text-gray-800 font-semibold">Mengapa Memilih Kami?</h2>
+          <p class="text-gray-500 mt-4">Kami merupakan startup digital yang bekerja secara profesional untuk setiap klien kami. Kami yakin produk yang kami hasilkan memiliki kualitas yang bagus dan telah terotomasi dengan baik sehingga mampu memenuhi kebutuhan klien</p>
+        </div>
+
+        <div class="mt-12 flex justify-between flex-wrap flex-col lg:flex-row">
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">User Research</p>
+              <p class="mt-2 text-gray-400">Melakukan studi terhadap pengguna untuk memahami kebutuhan, perilaku, dan tingkat kepuasan mereka terhadap produk.</p>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">Solusi yang Disesuaikan</p>
+              <p class="mt-2 text-gray-400">Kami memahami bahwa setiap proyek itu unik. Tim kami bekerja sama dengan Anda untuk menciptakan solusi yang disesuaikan untuk memenuhi kebutuhan Anda.</p>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">Dukungan yang Menyeluruh</p>
+              <p class="mt-2 text-gray-400">Dari konsep hingga penerapan, kami menyediakan dukungan menyeluruh untuk memastikan keberhasilan proyek Anda.</p>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">Standar Berkualitas Tinggi</p>
+              <p class="mt-2 text-gray-400">Kami mematuhi standar kualitas tertinggi di semua proyek kami, memastikan bahwa solusi kami dapat diandalkan dan dapat diskalakan.</p>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">Hemat Biaya</p>
+              <p class="mt-2 text-gray-400">Layanan kami memiliki harga yang kompetitif untuk memberikan Anda solusi yang hemat biaya tanpa mengorbankan kualitas.</p>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">Pengerjaan Tepat Waktu</p>
+              <p class="mt-2 text-gray-400">Tim kami bekerja secara efisien untuk memastikan bahwa proyek Anda selesai dalam jangka waktu yang telah disepakati.</p>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 p-6 py-8 hover:bg-white flex items-start gap-8 rounded border border-transparent hover:border-gray-100 hover:shadow-lg hover:shadow-gray-100 duration-150 ease-in">
+            <div class="flex-1">
+              <div class="w-20 h-20 rounded bg-teal-200"></div>
+            </div>
+            <div class="flex-2">
+              <p class="text-lg text-gray-800 font-semibold">Dukungan yang Berkelanjutan</p>
+              <p class="mt-2 text-gray-400">Dukungan kami tidak berakhir deng an pengiriman proyek Anda. Kami memberikan dukungan berkelanjutan untuk memastikan bahwa solusi Anda terus memenuhi kebutuhan Anda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- Footer Start -->
     <footer class="bg-[#3F3DAA] w-full mt-10 p-10 relative">
       <div class="flex items-center">
